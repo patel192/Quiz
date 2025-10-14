@@ -1,0 +1,162 @@
+/* Reset basic spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Main quiz container */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Header */
+.header h1 {
+  font-size: 2rem;
+  color: #ffdf6b;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  animation: slideDown 1s ease-in-out;
+}
+
+/* Welcome Section */
+.welcome h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome p {
+  color: #dcdcdc;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #ffdf6b;
+  color: #222;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 223, 107, 0.6);
+}
+
+/* Exit Button style */
+.exit-btn {
+  background-color: #ff7676;
+}
+
+.exit-btn:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Options Styling */
+.option-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  color: #222;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+  background: #d0eaff;
+  transform: scale(1.03);
+}
+
+.correct {
+  background-color: #4CAF50 !important; /* green */
+  color: white;
+}
+
+.wrong {
+  background-color: #f44336 !important; /* red */
+  color: white;
+}
+
+/* Result Box */
+.result-box {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  color: #222;
+  animation: fadeIn 0.6s ease;
+}
+
+.result-box h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.result-box p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+/* 🌈 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

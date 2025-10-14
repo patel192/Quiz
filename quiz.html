@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+    <!-- Header -->
+    <header class="header">
+      <h1>✨ Interactive Quiz ✨</h1>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <h2>Welcome to the Interactive Quiz!</h2>
+      <p>Test your knowledge, challenge your mind, and see how well you know your stuff. Ready to begin?</p>
+
+      <div class="button-group">
+        <button class="btn start-btn" id="startQuiz">Yes, Let’s Go!</button>
+        <button class="btn exit-btn" id="endQuiz">Maybe Later</button>
+      </div>
+    </section>
+
+    <!-- Hidden Quiz Section -->
+    <section id="quizSection" class="quiz-box" style="display: none;">
+      <h2 id="question">Question will appear here</h2>
+      <div id="options" class="options"></div>
+      <div class="controls">
+        <button id="nextBtn" class="btn">Next</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
