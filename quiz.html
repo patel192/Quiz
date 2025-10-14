@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- main container -->
   <div class="quiz-container">
     <!-- Header -->
     <header class="header">
@@ -16,20 +17,22 @@
     </header>
 
     <!-- Welcome Section -->
-    <section class="welcome">
+    <section class="welcome" id="welcomeSection">
       <h2>Welcome to the Interactive Quiz!</h2>
-      <p>Test your knowledge, challenge your mind, and see how well you know your stuff. Ready to begin?</p>
-
+      <p>
+        Test your knowledge, challenge your mind, and see how well you know your stuff. Ready to begin?
+      </p>
       <div class="button-group">
         <button class="btn start-btn" id="startQuiz">Yes, Let’s Go!</button>
         <button class="btn exit-btn" id="endQuiz">Maybe Later</button>
       </div>
     </section>
 
-    <!-- Hidden Quiz Section -->
-    <section id="quizSection" class="quiz-box" style="display: none;">
-      <h2 id="question">Question will appear here</h2>
-      <div id="options" class="options"></div>
+    <!-- Quiz Section -->
+    <section id="quizSection" class="hidden">
+      <h2 id="question"></h2>
+      <div class="timer" id="timer">Time Left: 15s</div>
+      <form id="optionsForm" class="options"></form>
       <div class="controls">
         <button id="nextBtn" class="btn">Next</button>
       </div>
